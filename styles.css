@@ -10,14 +10,6 @@
   font-family: 'Fraunces', serif;
 }
 
-.bottom-links a {
-  color: #25564b;
-  padding: 0 1rem;
-  font-family: 'Barlow', sans-serif;
-}
-footer img {
-  padding: 2rem 1rem;
-}
 nav .logo{
  
 }
@@ -79,6 +71,9 @@ h3 {
  h3{
   font-size: 34px;
  }
+  h1{
+   font-size: 20px;
+  }
 }
 .learn-more1 {
   text-decoration: underline;
@@ -246,9 +241,7 @@ a {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  h1{
-   font-size: 15px;
-  }
+ 
   .testimonial-boxes {
   padding: 5% 4%;}
   .testimonial-section {
@@ -324,6 +317,15 @@ footer img {
   text-align: center;
   justify-content: center;
   margin: auto;
+}
+
+.bottom-links a {
+  color: #25564b;
+  padding: 0 1rem;
+  font-family: 'Barlow', sans-serif;
+}
+footer img {
+  padding: 2rem 1rem;
 }
 .socials{
  display: flex;

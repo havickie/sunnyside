@@ -18,17 +18,46 @@
 footer img {
   padding: 2rem 1rem;
 }
+nav .logo{
+ 
+}
 nav {
   display: flex;
-  justify-content: ;
+ 
   background-color: #3ebfff;
   padding: 25px 30px;
   justify-content: space-between;
 }
-
+input[type=checkbox]{
+ display: none;
+}
+.hamburger{
+ display: none;
+ height: 2rem;
+ user-select: none;
+}
 nav .links a {
   color: #fff;
   padding: 0 2.5rem;
+}
+
+@media screen and (max-width: 768px){
+nav{
+
+}
+ nav .links a {
+  display: none;
+}
+.hamburger{
+ display:block;
+ float: right;
+ margin: 0 0 0 9rem;
+}
+input[type=checkbox]:checked ~ nav .links {
+
+ display: block;
+
+}
 }
 nav .links .contact-btn {
   background-color: #fff;
@@ -81,7 +110,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 90vh;
+  height: 80vh;
   /* width: 100%; */
 }
 .hero-section h1 {
@@ -100,13 +129,10 @@ h3 {
 }
 .arrow {
   position: absolute;
-  top: 16.7rem;
+  top: 12.7rem;
   width: 25px;
   left: 50%;
   right: 50%;
-}
-.nav .hamburger {
-  background-color: black;
 }
 a {
   text-decoration: none;
@@ -180,6 +206,12 @@ a {
   padding: 10% 8% 9% 8%;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+ .pad {
+  padding: 20% 15%;
+  margin: auto;
+}
+}
 .pad2 h3{
  color: hsl(167, 40%, 24%);
 }
@@ -209,7 +241,7 @@ a {
 }
 .testimonial-boxes {
   text-align: center;
-  padding: 0 4rem;
+  padding: 5% 4rem;
 }
 .profile-img img {
   border-radius: 100%;

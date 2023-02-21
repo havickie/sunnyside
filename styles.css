@@ -54,9 +54,7 @@ nav{
  margin: 0 0 0 9rem;
 }
 input[type=checkbox]:checked ~ nav .links {
-
  display: block;
-
 }
 }
 nav .links .contact-btn {

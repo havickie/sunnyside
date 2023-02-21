@@ -51,7 +51,7 @@ nav{
 .hamburger{
  display:block;
  float: right;
- margin: 0 0 0 9rem;
+ margin: 0 0 0 rem;
 }
 input[type=checkbox]:checked ~ nav .links {
  display: block;
@@ -68,12 +68,17 @@ h1 {
   font-weight: 800;
   font-size: 40px;
 }
+
 h3 {
   color: hsl(212, 27%, 19%);
   font-size: 40px;
   font-family: 'Fraunces', serif;
   font-weight: 600;
   padding-bottom: 1rem;
+}@media screen and (max-width: 768px) {
+ h3{
+  font-size: 34px;
+ }
 }
 .learn-more1 {
   text-decoration: underline;
@@ -203,10 +208,11 @@ a {
 .pad2 {
   padding: 10% 8% 9% 8%;
   text-align: center;
+  max-width: 100%;
 }
 @media screen and (max-width: 600px) {
  .pad {
-  padding: 20% 15%;
+  padding: 20% 11%;
   margin: auto;
 }
 }
@@ -224,12 +230,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-@media screen and (max-width: 600px) {
-  .testimonial {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
+
 .testimonial-section h3 {
   color: hsl(210, 4%, 67%);
   word-spacing: 15px;
@@ -240,6 +241,19 @@ a {
 .testimonial-boxes {
   text-align: center;
   padding: 5% 4rem;
+}@media screen and (max-width: 600px) {
+  .testimonial {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h1{
+   font-size: 15px;
+  }
+  .testimonial-boxes {
+  padding: 5% 4%;}
+  .testimonial-section {
+  padding: 8rem 2rem;
+}
 }
 .profile-img img {
   border-radius: 100%;
